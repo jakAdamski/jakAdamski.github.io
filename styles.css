@@ -1,3 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: bisque;
+    height:100vh;
+}
+#container{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 65px 200px 200px 200px 65px;
+    grid-template-areas: 
+    'h h h h h h'
+    's m m m m m'
+    's m m m m m'
+    's m m m m m'
+    'f f f f f f'
+    ;
+}
+#header{
+    grid-area: h;
+    font-size:1.3rem;
+    
+}
+#navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height:65px;
+    
+}
+#navbar ul {
+    display:flex;
+    list-style: none;
+}
+#navbar ul > li {
+    display:flex;
+    margin-right: 1.4rem;
+}
+
+
+
+
+
+
+#sidebar{
+    grid-area: s;
+}
+#main{
+    grid-area: m;
+}
+#footer{
+    grid-area: f;
 }
