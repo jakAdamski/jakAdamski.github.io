@@ -169,7 +169,22 @@ body{
     letter-spacing: 1px;
 }
 
-@media screen and (min-width:2560px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:390px) {
 body{
     background-color: #fef8d2;
     font-family: 'Xanh Mono', monospace;
@@ -188,7 +203,7 @@ body{
 #container{
     display:grid;
     grid-template-columns: repeat(6,1fr);
-    grid-template-rows: 120px 400px 400px 400px 120px;
+    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
     grid-template-areas: 
     'h h h h h h'
     's m m m m m'
@@ -201,7 +216,7 @@ body{
 /* header styles */
 #header{
     grid-area: h;
-    font-size:2.2rem;
+    font-size:0.7rem;
     
 }
 
@@ -209,7 +224,6 @@ body{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height:120px;
     
 }
 #navbar ul {
@@ -228,11 +242,10 @@ body{
 #logo{
     width:100%;
     display:flex;
-    height:120px;
     align-items: center;
-    font-size: 8rem;
-    margin-left: 9rem;
-    letter-spacing: 4px;
+    font-size: 1.1rem;
+    margin-left: 1rem;
+    letter-spacing: 2px;
     cursor: default;
     text-shadow:
         -1px -1px 1px rgba(255, 255, 255, 1), 
@@ -249,18 +262,13 @@ body{
     align-items: center;
 }
 .social{
-    height:360px;
+    height:auto;
 }
 .social img{
-    height:300px;
-    width:300px;
-    transition: 0.6s ease-in-out;
+    height:50px;
+    width:50px;
 }
-.social img:hover{
-    height:340px;
-    width:340px;
-    transform: scale(120%);
-}
+
 /* main area styles*/
 #main{
     grid-area: m;
@@ -270,7 +278,7 @@ body{
     width:100%;
 }
 #content h1{
-    font-size: 20rem;
+    font-size: 4rem;
     font-family: 'Xanh Mono', monospace;
     font-weight: 400;
     color:white;
@@ -282,18 +290,18 @@ body{
 #name{
     display: flex;
     justify-content: flex-end;
-    margin-right: 3rem;
+    margin-right: 1rem;
 }
 #surname{
     display:flex;
     justify-content: flex-end;
-    margin-right: 3rem;
+    margin-right: 1rem;
 }
 #btn_div{
     display:flex;
     justify-content: flex-end;
     margin-top: 1.4rem;
-    margin-right: 28rem;
+    margin-right: 4rem;
 
 }
 @keyframes btnAnimation {
@@ -310,11 +318,11 @@ body{
 	}
 }
 #checkout_btn{
-    width:240px;
-    height:70px;
-    font-size: 1.4rem;
-    border-radius: 16px;
-    border:2px solid black;
+    width:90px;
+    height:20px;
+    font-size: 0.5rem;
+    border-radius: 8px;
+    border:1px solid black;
     background-color: transparent;
     font-family: 'Xanh Mono', monospace;
     letter-spacing: 1px;
