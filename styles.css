@@ -222,10 +222,10 @@ body{
     }
     #btn_div{
         display:flex;
-        justify-content: flex-end;
+        justify-content: center;
         margin-top: 2.4rem;
-        margin-right: 6.2rem;
-    
+        margin-right: 0;
+        margin-bottom: 1rem;
     }
     #btn_div a{
         color:black;
@@ -236,11 +236,13 @@ body{
     }
     .social img {
         transition: none;
+        height: 100px;
     }
     .social img:hover{
-        transform: none;
+        transform: scale(100%);
     }
     #footer{
         grid-area: f;
+        align-items: center;
     }
 }
