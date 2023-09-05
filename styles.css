@@ -148,7 +148,7 @@ body{
     width:180px;
     height:40px;
     border-radius: 16px;
-    border:2px solid black;
+    border:2px dashed black;
     background-color: transparent;
     font-family: 'Xanh Mono', monospace;
     letter-spacing: 1px;
