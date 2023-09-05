@@ -227,12 +227,18 @@ body{
         margin-right: 6.2rem;
     
     }
+    #btn_div a{
+        color:black;
+    }
     #sidebar{
         grid-area: s;
         flex-direction: column;
     }
     .social img {
         transition: none;
+    }
+    .social img:hover{
+        transform: none;
     }
     #footer{
         grid-area: f;
