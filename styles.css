@@ -52,6 +52,8 @@ body{
     display:flex;
     list-style: none;
 }
+
+
 #navbar ul > li {
     display:flex;
     margin-right: 2rem;
@@ -60,7 +62,9 @@ body{
     1px 1px 1px rgba(0, 0, 0, 0.6);
     color: white;
     letter-spacing: 2px;
+    cursor: pointer;
 }
+
 #logo{
     width:100%;
     display:flex;
@@ -70,6 +74,15 @@ body{
     margin-left: 6rem;
     letter-spacing: 2px;
     cursor: default;
+    text-shadow:
+        -1px -1px 1px rgba(255, 255, 255, 1), 
+        1px 1px 1px rgba(0, 0, 0, 0.6);
+    color:white;
+
+}
+#logo a{
+    text-decoration: none;
+    cursor: pointer;
     text-shadow:
         -1px -1px 1px rgba(255, 255, 255, 1), 
         1px 1px 1px rgba(0, 0, 0, 0.6);
@@ -104,6 +117,21 @@ body{
 }
 #content{
     width:100%;
+}
+.content_change{
+display: flex;
+justify-content: flex-end;
+margin-right: 3rem;
+font-size: 3.7rem;
+    font-family: 'Xanh Mono', monospace;
+    font-weight: 400;
+    color: #fff8e7;
+    text-shadow: 
+        -1px -1px 1px rgba(255, 255, 255, 0.9), 
+        1px 1px 1px rgba(0, 0, 0, 0.6);
+    cursor: default;
+    text-align: right;
+    margin-top: 2rem;
 }
 #content h1{
     font-size: 10rem;
@@ -200,10 +228,14 @@ body{
     }
     #navbar ul >li {
         margin-right: 0.7rem;
+        padding:6px;
     }
     #logo{
         margin-left: 0;
         margin-left:2rem;
+    }
+    #logo a{
+        text-decoration: none;
     }
     #main{
         grid-area: m;
@@ -213,6 +245,21 @@ body{
     #content h1{
         font-size: 5rem;
         margin-bottom: 4rem;
+    }
+    .content_change{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 0.4remrem;
+        font-size: 2.2rem;
+            font-family: 'Xanh Mono', monospace;
+            font-weight: 400;
+            color: #fff8e7;
+            text-shadow: 
+                -1px -1px 1px rgba(255, 255, 255, 0.9), 
+                1px 1px 1px rgba(0, 0, 0, 0.6);
+            cursor: default;
+            text-align: right;
+            margin-top: 0.2rem;
     }
     #name{
         margin-right: 0.4rem;
@@ -235,11 +282,12 @@ body{
         flex-direction: column;
     }
     .social img {
-        transition: none;
         height: 100px;
     }
     .social img:hover{
-        transform: scale(100%);
+        width: 100px;
+        height:100px;
+        transform: none;
     }
     #footer{
         grid-area: f;
