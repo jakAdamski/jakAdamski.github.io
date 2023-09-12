@@ -3,7 +3,7 @@ var mainContent = document.querySelector("#content");
 textChange.addEventListener("click" , titleChange);
 var contact = document.getElementById("contact");
 contact.addEventListener("click", email);
-
+var textRevert = document.getElementById("about_me");
 //function addMainToList() {
  //   var ul = document.getElementById("ul");
    // var li = document.createElement("li");
@@ -15,7 +15,8 @@ contact.addEventListener("click", email);
 
 function titleChange(){
         mainContent.classList.add("content_change");
-        mainContent.innerHTML="Enthusiastic</br> Developer </br> Ready </br>to </br>rock </br>the</br> World!";
+        mainContent.innerHTML="Enthusiastic</br> Developer </br> Ready </br>To </br>Rock </br>The</br> World!";
+      
 
    }
 
