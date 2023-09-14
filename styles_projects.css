@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #c4ddfe;
+    font-family: 'Xanh Mono', monospace;
+    height: 100%;
+    animation: animatedBackground 9s linear infinite alternate;
+}
+@keyframes animatedBackground{
+    from{
+        background-color: #c4ddfe;
+    }
+    to{
+        background-color: #fed8f7;
+    }
+    
+}
+#container{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 3fr 3fr 3fr 3fr 0.5fr; 
+    grid-template-areas: 
+    'h'
+    'p1'
+    'p2'
+    'p3'
+    'p4'
+    'f'
+    ;
+}
