@@ -32,10 +32,112 @@ body{
     'p4'
     'f'
     ;
+    row-gap: 1rem;
+    height:100%;
 }
 #main{
     background-color: black;
 }
-h1{
-    color:white;
+#p1{
+    grid-area: p1;
+}
+#p1_content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+#p2{
+    grid-area: p2;
+}
+#p2_content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+#p3{
+    grid-area: p3;
+}
+#p3_content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+#p4{
+    grid-area: p4;
+}
+#p4_content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+.project_title{
+    color:#fff8e7;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 
+        -1px -1px 1px rgba(255, 255, 255, 0.9), 
+        1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+.pic{
+    height:200px;
+    width:90%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.pic img{
+   height:100%;
+   width:100%;
+}
+.buttons{
+    display: flex;
+    gap:30px;
+}
+.live_btn{
+        display:inline-flex;
+        padding:0.3em 1.2em;
+        border-radius:2em;
+        box-sizing: border-box;
+        text-decoration:none;
+        color:#fff8e7;
+        background-color:transparent;
+        text-align:center;
+        border: 1px solid #fff8e7;
+        font-family: 'Xanh Mono' , monospace;
+        text-shadow: 
+        -1px -1px 1px rgba(255, 255, 255, 0.9), 
+        1px 1px 1px rgba(0, 0, 0, 0.6);
+        }
+.view_btn{
+        display:inline-flex;
+        padding:0.3em 1.2em;
+        border-radius:2em;
+        box-sizing: border-box;
+        text-decoration:none;
+        animation: colorchange 9s linear infinite alternate;
+        background-color:#fff8e7;
+        text-align:center;
+        border: 1px dashed black;
+        font-family: 'Xanh Mono' , monospace;
+        }    
+        @keyframes colorchange{
+            from{
+                color: #c4ddfe;
+            }
+            to{
+                color: #fed8f7;
+            }
+
+            }
+/* footer styles*/
+#footer{
+    grid-area: f;
+    cursor: default;
+}
+#footer_box{
+    font-size: 0.6rem;
+    letter-spacing: 1px;
 }
