@@ -92,7 +92,7 @@ body{
 .pic img{
    height:300px;
    width:100%;
-   border-radius: 30px;
+   border-radius:30px;
 }
 .buttons{
     display: flex;
