@@ -1,1 +1,0 @@
-Styles folder for portfolio.
